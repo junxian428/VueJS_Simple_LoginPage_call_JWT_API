@@ -1,24 +1,26 @@
 # loginpage
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+POST request (register)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+http://localhost:8086/api/v1/auth/register
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+{
+
+    "email": "junxian428@gmail.com",
+
+    "password": "junxian428"
+
+}
+
+
+______________________________________________________________
+
+use jwt;
+
+UPDATE _user
+SET role = 'USER'
+WHERE id = 52;
+
+select * from _user
